@@ -1,0 +1,4804 @@
+[
+  {
+    "conversation_id": "CHAT_000001",
+    "channel": "web_chat",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_002",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Asia-Pacific"
+    },
+    "language": "en",
+    "created_at": "2024-02-07T18:08:01+10:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "gold",
+      "party_size": 5
+    },
+    "intent_primary": "Cancellation / refunds / fees",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1416,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hey there. I need to cancel and want to know if I’ll be charged.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "I can help with that. Cancellation terms depend on the rate type and how close you are to arrival. If you tell me the property city and the date range, I’ll explain the likely fee window.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.93
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "It's Sydney. Arrival is in 2 days.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Given you’re within 48–72 hours of arrival, many rates become non‑refundable or charge the first night. If you share whether it’s a flexible or advance purchase rate, I can be more precise.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.91
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Not sure. it's labeled 'Saver'.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Saver rates are often more restrictive and may be non‑refundable close to arrival. If you’d like, a hotel team member can confirm the exact terms tied to your reservation.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.57
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Ok, I'll keep it then.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Appreciate it.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "Anything else I can help with today?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.85
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "cancellation",
+      "refund",
+      "policy"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000002",
+    "channel": "whatsapp",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_003",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "region": "Africa"
+    },
+    "language": "es",
+    "created_at": "2024-03-27T14:06:28+02:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "gold",
+      "party_size": 5
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1182,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hola—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.91
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.83
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "By the way, is anything temporarily closed this week?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Good question. For this property, any short maintenance closures (e.g., pool/gym) are posted in the pre‑arrival message; currently there are no full-day closures noted.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.78
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Se agradece.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "¿Algo más en lo que pueda ayudar?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.93
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "amenities",
+      "services",
+      "ops_notes"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000003",
+    "channel": "web_chat",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_004",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Asia-Pacific"
+    },
+    "language": "es",
+    "created_at": "2024-03-31T11:21:52+08:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 5
+    },
+    "intent_primary": "Pet policy",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 961,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Buenas. Is this property pet-friendly? I have a small dog.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Many GSH hotels welcome pets, typically with weight limits and a per-stay or per-night fee. Service animals are always welcome. Tell me the brand (UrbanStay / GrandStay Business / Resorts) and we’ll confirm the standard policy.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.93
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "It's GrandStay Business. 8kg. any deposit?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "For small pets like 8kg, it’s usually permitted with a cleaning fee; refundable deposits are less common but may apply at select properties. We can note the pet on the reservation so the hotel prepares a pet kit if available.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.72
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "¡Gracias!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Con gusto—“Stay Your Way”.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.95
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "pet_policy",
+      "animals"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000004",
+    "channel": "web_chat",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_005",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "region": "Middle East"
+    },
+    "language": "es",
+    "created_at": "2024-03-06T06:28:37+04:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "silver",
+      "party_size": 4
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": "Pool hours",
+    "sentiment_start": "negative",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1373,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hola 👋—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.85
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.88
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "And the pool?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Pool hours are usually 7:00 AM–9:00 PM. Towels are provided poolside; children must be supervised.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.76
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "By the way, is anything temporarily closed this week?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "Good question. For this property, any short maintenance closures (e.g., pool/gym) are posted in the pre‑arrival message; currently there are no full-day closures noted.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.78
+      },
+      {
+        "turn": 9,
+        "sender": "guest",
+        "text": "Se agradece.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 10,
+        "sender": "assistant",
+        "text": "¿Algo más en lo que pueda ayudar?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.8
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "amenities",
+      "services",
+      "ops_notes"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000005",
+    "channel": "web_chat",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_006",
+      "city": "Madrid",
+      "country": "Spain",
+      "region": "Europe"
+    },
+    "language": "fr",
+    "created_at": "2024-03-08T22:56:00+01:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "gold",
+      "party_size": 1
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 845,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Bonjour—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.72
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.88
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "By the way, is anything temporarily closed this week?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Good question. For this property, any short maintenance closures (e.g., pool/gym) are posted in the pre‑arrival message; currently there are no full-day closures noted.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.78
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Je vous remercie.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "Ravi d’aider—« Stay Your Way ».",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.76
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "amenities",
+      "services",
+      "ops_notes"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000006",
+    "channel": "web_chat",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_007",
+      "city": "Rome",
+      "country": "Italy",
+      "region": "Europe"
+    },
+    "language": "en",
+    "created_at": "2024-05-11T12:40:01+01:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "platinum",
+      "party_size": 5
+    },
+    "intent_primary": "Parking / transportation / airport shuttle",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 535,
+      "csat_score": 3
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello! Do you have airport shuttle at Rome?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Some GSH properties offer a scheduled shuttle, while others partner with vetted car services. If you share your arrival airport and approximate landing time, I can advise the best option for this property.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.89
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "Landing 18:20. Also parking onsite?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "On-site parking availability varies by property; when offered, it’s typically paid per night and may be valet or self-park. For your 18:20 arrival, a pre-booked transfer is usually the smoothest—especially during peak hours.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.91
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "By the way, is anything temporarily closed this week?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Good question. For this property, any short maintenance closures (e.g., pool/gym) are posted in the pre‑arrival message; currently there are no full-day closures noted.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.78
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Great, noted.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.82
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "parking",
+      "transport",
+      "shuttle",
+      "ops_notes"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000007",
+    "channel": "mobile_app",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_008",
+      "city": "Seoul",
+      "country": "South Korea",
+      "region": "Asia-Pacific"
+    },
+    "language": "en",
+    "created_at": "2024-05-03T10:02:28+09:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "none",
+      "party_size": 3
+    },
+    "intent_primary": "Check-in / check-out times & early/late requests",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1462,
+      "csat_score": 5
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello! What time is check-in at Seoul? Also, can I do early check-in?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Standard check-in is 3:00 PM and check-out is 12:00 PM. Early check-in is based on availability; we can note your preference and confirm closer to arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.91
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I arrive around 11am. any fee?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "If an early check-in fee applies, it depends on occupancy and how early the room is ready. If you share your arrival day, I can add a request for 11:00 AM to the property.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.82
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Arriving next week. pls add request. RES_ID_085",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Done—I've added an early check-in request for around 11:00 AM to your reservation. We’ll do our best and confirm at the desk on arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.92
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "By the way, is anything temporarily closed this week?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "Good question. For this property, any short maintenance closures (e.g., pool/gym) are posted in the pre‑arrival message; currently there are no full-day closures noted.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.78
+      },
+      {
+        "turn": 9,
+        "sender": "guest",
+        "text": "Appreciate it.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 10,
+        "sender": "assistant",
+        "text": "Happy to help—Stay Your Way.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.83
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "checkin_checkout",
+      "timing",
+      "front_desk",
+      "ops_notes"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000008",
+    "channel": "mobile_app",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_009",
+      "city": "Seoul",
+      "country": "South Korea",
+      "region": "Asia-Pacific"
+    },
+    "language": "fr",
+    "created_at": "2024-03-07T02:05:38+09:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 3
+    },
+    "intent_primary": "Parking / transportation / airport shuttle",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1205,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Salut! Do you have airport shuttle at Seoul?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Some GSH properties offer a scheduled shuttle, while others partner with vetted car services. If you share your arrival airport and approximate landing time, I can advise the best option for this property.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.82
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "Landing 18:20. Also parking onsite?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "On-site parking availability varies by property; when offered, it’s typically paid per night and may be valet or self-park. For your 18:20 arrival, a pre-booked transfer is usually the smoothest—especially during peak hours.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.83
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Je vous remercie.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "C’est noté.B on séjour !",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.77
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "parking",
+      "transport",
+      "shuttle"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000009",
+    "channel": "whatsapp",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_010",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "region": "Middle East"
+    },
+    "language": "en",
+    "created_at": "2024-04-16T20:59:46+04:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 6
+    },
+    "intent_primary": "Billing / invoice request",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "abandoned",
+      "resolution_time_seconds": 760,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello—I need an invoice for my stay. Can you email it?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "I can help you get a copy. For privacy, we don’t collect emails in chat. You can request the invoice at the front desk, or we can have the hotel resend it through the secure channel tied to your reservation.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.9
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I already checked out. Can you send it here?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "For security, we can’t share full invoices directly in chat. The fastest option is to request it via the reservation channel or call the property—if you prefer, I can connect you to the billing team.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.77
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Ok connect me.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Sure—if you message “Billing” with your RES_ID placeholder, the property team can pick it up and resend securely.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.86
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Great, noted.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.79
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "billing",
+      "invoice",
+      "receipt"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000010",
+    "channel": "web_chat",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_011",
+      "city": "Toronto",
+      "country": "Canada",
+      "region": "North America"
+    },
+    "language": "es",
+    "created_at": "2024-05-03T20:41:16-05:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "silver",
+      "party_size": 2
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 684,
+      "csat_score": 3
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Buenas—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.73
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.92
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "¡Gracias!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Con gusto—“Stay Your Way”.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.73
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "amenities",
+      "services"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000011",
+    "channel": "web_chat",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_012",
+      "city": "Paris",
+      "country": "France",
+      "region": "Europe"
+    },
+    "language": "es",
+    "created_at": "2024-02-13T19:46:41+01:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "silver",
+      "party_size": 5
+    },
+    "intent_primary": "Check-in / check-out times & early/late requests",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 984,
+      "csat_score": 5
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hola 👋! What time is check-in at Paris? Also, can I do early check-in?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Standard check-in is 3:00 PM and check-out is 12:00 PM. Early check-in is based on availability; we can note your preference and confirm closer to arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.87
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I arrive around 11am. any fee?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "If an early check-in fee applies, it depends on occupancy and how early the room is ready. If you share your arrival day, I can add a request for 11:00 AM to the property.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.95
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Arriving next week. pls add request. RES_ID_036",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Done—I've added an early check-in request for around 11:00 AM to your reservation. We’ll do our best and confirm at the desk on arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.74
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Gracias.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "¿Algo más en lo que pueda ayudar?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.82
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "checkin_checkout",
+      "timing",
+      "front_desk"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000012",
+    "channel": "whatsapp",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_013",
+      "city": "Rome",
+      "country": "Italy",
+      "region": "Europe"
+    },
+    "language": "en",
+    "created_at": "2024-06-28T09:44:15+01:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 2
+    },
+    "intent_primary": "Cancellation / refunds / fees",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "escalated",
+      "resolution_time_seconds": 3658,
+      "csat_score": 3
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello. I need to cancel and want to know if I’ll be charged.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "I can help with that. Cancellation terms depend on the rate type and how close you are to arrival. If you tell me the property city and the date range, I’ll explain the likely fee window.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.92
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "It's Roem. Arrival is in 2 days.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Thanks. Because fees can vary by rate and we’ll need to review reservation-specific details, I’m going to bring in a hotel team member to confirm the exact cancellation outcome.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.59
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Please do. I can't afford a surprise charge.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "I’m going to loop in a hotel team member to review this and follow up here.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.83
+      },
+      {
+        "turn": 7,
+        "sender": "agent",
+        "text": "Hi—hotel support here. I reviewed the reservation terms. Your rate is non‑refundable within 72 hours of arrival, so the first night would be charged if you cancel today. If you'd like, I can request a one-time exception review, but it isn’t guaranteed.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.79
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Can you request the exception?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "agent",
+        "text": "Yes. I’ve submitted an exception request to the duty manager. You’ll see an update in this chat once a decision is made.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.85
+      }
+    ],
+    "escalation": {
+      "escalated": true,
+      "reason": "Reservation-specific cancellation outcome and fee review",
+      "escalation_packet": {
+        "summary": "Escalate to property/specialist for cancellation / refunds / fees inquiry at Rome (PROP_013).",
+        "guest_ask": "Hello. I need to cancel and want to know if I’ll be charged.",
+        "constraints": [
+          "No PII in chat",
+          "Use secure channel for invoices/account lookup",
+          "Stay Your Way tone"
+        ],
+        "recommended_next_action": "Review reservation/account internally, confirm policy outcome, and respond in this thread with next steps.",
+        "missing_info": [
+          "Exact stay dates",
+          "Rate type / package",
+          "Arrival/departure time details"
+        ]
+      }
+    },
+    "tags": [
+      "cancellation",
+      "refund",
+      "policy",
+      "escalated"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000013",
+    "channel": "web_chat",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_014",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "region": "Africa"
+    },
+    "language": "en",
+    "created_at": "2024-01-18T17:36:50+02:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "silver",
+      "party_size": 1
+    },
+    "intent_primary": "Check-in / check-out times & early/late requests",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1524,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hi! What time is check-in at Cape Town? Also, can I do early check-in?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Standard check-in is 3:00 PM and check-out is 12:00 PM. Early check-in is based on availability; we can note your preference and confirm closer to arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.73
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I arrive around 11am. any fee?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "If an early check-in fee applies, it depends on occupancy and how early the room is ready. If you share your arrival day, I can add a request for 11:00 AM to the property.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.88
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Arriving next week. pls add request. RES_ID_045",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Done—I've added an early check-in request for around 11:00 AM to your reservation. We’ll do our best and confirm at the desk on arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.87
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Apprecitae it.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.8
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "checkin_checkout",
+      "timing",
+      "front_desk"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000014",
+    "channel": "whatsapp",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_015",
+      "city": "Rome",
+      "country": "Italy",
+      "region": "Europe"
+    },
+    "language": "en",
+    "created_at": "2024-02-19T00:15:50+01:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "silver",
+      "party_size": 3
+    },
+    "intent_primary": "Loyalty program points / tiers / benefits",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "escalated",
+      "resolution_time_seconds": 6780,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello! I'm not a member—do I get late checkout at Rome?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Late check-out benefits depend on your GSH loyalty tier and availability on departure day. Gold and Platinum typically receive priority for late check-out requests, while Silver receives standard preference. We’ll confirm at the desk or via chat on the morning of departure.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.81
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "How do points post? I stayed last weekend but don't see them.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Points usually post within 3–7 days after checkout, once the stay is marked as completed. If it’s been longer than 7 days, we can open a missing-stay review (no personal details needed here—just your RES_ID placeholder).",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.9
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "It's been 9 days. RES_ID_036",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Thanks. A missing-stay review requires account-level lookup, so I’ll escalate this to a loyalty specialist to investigate and update you here.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.47
+      },
+      {
+        "turn": 7,
+        "sender": "assistant",
+        "text": "I’m going to loop in a hotel team member to review this and follow up here.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.84
+      },
+      {
+        "turn": 8,
+        "sender": "agent",
+        "text": "Loyalty desk here—request received. Please confirm the property city and checkout date so we can match the stay. We can proceed with placeholders in chat and follo wsecure channels if needed.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.87
+      },
+      {
+        "turn": 9,
+        "sender": "guest",
+        "text": "Rome, checkout was 2024-02-15",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 10,
+        "sender": "agent",
+        "text": "Perfect. I’ve opened a missing-stay case. Typical resolution is 3–5 business days; we’ll post points and eilgible nights once verified.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.74
+      }
+    ],
+    "escalation": {
+      "escalated": true,
+      "reason": "Account-level loyalty points / missing stay investigation",
+      "escalation_packet": {
+        "summary": "Escalate to property/specialist for loyalty program points / tiers / benefits inquiry at Rome (PROP_015).",
+        "guest_ask": "Hello! I'm not a member—do I get late checkout at Rome?",
+        "constraints": [
+          "No PII in chat",
+          "Use secure channel for invoices/account lookup",
+          "Stay Your Way tone"
+        ],
+        "recommended_next_action": "Review reservation/account internally, confirm policy outcome, and respond in this thread with next steps.",
+        "missing_info": [
+          "Checkout date",
+          "Loyalty account match"
+        ]
+      }
+    },
+    "tags": [
+      "loyalty",
+      "points",
+      "tier_benefits",
+      "escalated"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000015",
+    "channel": "whatsapp",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_016",
+      "city": "Chicago",
+      "country": "United States",
+      "region": "North America"
+    },
+    "language": "en",
+    "created_at": "2024-04-08T19:30:55-06:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "platinum",
+      "party_size": 3
+    },
+    "intent_primary": "Billing / invoice request",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1174,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hey there—I need an invoice for my stay. Can you email it?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "I can help you get a copy. For privacy, we don’t collect emails in chat. You can request the invoice at the front desk, or we can have the hotel resend it through the secure channel tied to your reservation.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.84
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I already checked out. Can you send it here?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "For security, we can’t share full invoices directly in chat. The fastest option is to request it via the reservation channel or call the property—if you prefer, I can connect you to the billing team.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.79
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Ok connect me.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Sure—if you message “Billing” with your RES_ID placeholder, the property team can pick it up and resend securely.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.94
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Thank you.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "Anything else I can help with today?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.79
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "billing",
+      "invoice",
+      "receipt"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000016",
+    "channel": "whatsapp",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_017",
+      "city": "Riyadh",
+      "country": "Saudi Arabia",
+      "region": "Middle East"
+    },
+    "language": "ar",
+    "created_at": "2024-03-14T05:55:34+03:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 5
+    },
+    "intent_primary": "Loyalty program points / tiers / benefits",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1805,
+      "csat_score": 5
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "أهلاً! I'm Platinum—do I get late checkout at Riyadh?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Late check-out benefits depend on your GSH loyalty tier and availability on departure day. Gold and Platinum typically receive priority for late check-out requests, while Silver receives standard preference. We’ll confirm at the desk or via chat on the morning of departure.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.8
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "How do points post? I stayed last weekend but don't see them.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Points usually post within 3–7 days after checkout, once the stay is marked as completed. If it’s been longer than 7 days, we can open a missing-stay review (no personal details needed here—just your RES_ID placeholder).",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.81
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "It's been 9 days. RES_ID_094",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Since it’s been 9 days, the next step is a missing-stay review. If you want, I can connect you with the loyalty team to process it.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.41
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "No worries, I'll wait a bit more.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "شكراً لك.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "سعيد بالمساعدة—«إقامتك بطريقتك».",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.74
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "loyalty",
+      "points",
+      "tier_benefits"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000017",
+    "channel": "whatsapp",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_018",
+      "city": "New York",
+      "country": "United States",
+      "region": "North America"
+    },
+    "language": "en",
+    "created_at": "2024-01-15T12:43:29-05:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "gold",
+      "party_size": 2
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1758,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.93
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.89
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Greta, noted.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Anything else I can help with today?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.88
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "amenities",
+      "services"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000018",
+    "channel": "whatsapp",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_019",
+      "city": "Chicago",
+      "country": "United States",
+      "region": "North America"
+    },
+    "language": "ar",
+    "created_at": "2024-02-28T03:36:47-06:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "none",
+      "party_size": 6
+    },
+    "intent_primary": "Check-in / check-out times & early/late requests",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1822,
+      "csat_score": 5
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "مرحباً! What time is check-in at Chicago? Also, can I do early check-in?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Standard check-in is 3:00 PM and check-out is 12:00 PM. Early check-in is based on availability; we can note your preference and confirm closer to arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.82
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I arrive around 11am. any fee?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "If an early check-in fee applies, it depends on occupancy and how early the room is ready. If you share your arrival day, I can add a request for 11:00 AM to the property.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.76
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Arriving next week. pls add request. RES_ID_088",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Done—I've added an early check-in request for around 11:00 AM to your reservation. We’ll do our best and confirm at the desk on arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.78
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "شكراً!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "هل يمكنني المساعدة في أي شيء آخر؟",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.78
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "checkin_checkout",
+      "timing",
+      "front_desk"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000019",
+    "channel": "whatsapp",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_020",
+      "city": "Rome",
+      "country": "Italy",
+      "region": "Europe"
+    },
+    "language": "en",
+    "created_at": "2024-04-24T02:16:57+01:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "none",
+      "party_size": 3
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 970,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.92
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is berakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.86
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Appreciate it.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Anything else I can help with today?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.79
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "amenities",
+      "services"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000020",
+    "channel": "whatsapp",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_021",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "region": "Africa"
+    },
+    "language": "es",
+    "created_at": "2024-04-27T21:07:40+02:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "gold",
+      "party_size": 2
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1720,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Buenas—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.92
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.88
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "¡Gracias!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Listo. ¡Buen viaje!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.9
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "amenities",
+      "services"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000021",
+    "channel": "web_chat",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_022",
+      "city": "Mexico City",
+      "country": "Mexico",
+      "region": "North America"
+    },
+    "language": "en",
+    "created_at": "2024-06-10T06:16:58-06:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "silver",
+      "party_size": 3
+    },
+    "intent_primary": "Billing / invoice request",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 731,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hi—I need an invioce for my stay. Can you email it?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "I can help you get a copy. For privacy, we don’t collect emails in chat. You can request the invoice at the front desk, or we can have the hotel resend it through the secure channel tied to your reservation.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.89
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I already checked out. Can you send it here?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "For security, we can’t share full invoices directly in chat. The fastest option is to request it via the reservation channel or call the property—if you prefer, I can connect you to the billing team.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.91
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Ok connect me.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Sure—if you message “Billing” with your RES_ID placeholder, the property team can pick it up and resend securely.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.72
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Thank you.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "Anything else I can help with today?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.88
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "billing",
+      "invoice",
+      "receipt"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000022",
+    "channel": "web_chat",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_023",
+      "city": "Casablanca",
+      "country": "Morocco",
+      "region": "Africa"
+    },
+    "language": "en",
+    "created_at": "2024-03-04T16:37:12+01:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "silver",
+      "party_size": 5
+    },
+    "intent_primary": "Local city guide / attractions / safety / transport tips",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1345,
+      "csat_score": 5
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hey there! First time in Casablanca. Any areas to avoid at night? also best way from downtown?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Happy to help. For most major areas, stick to well-lit main streets at night and use licensed rides or the metro/taxi stands. From downtown, public transit is usually fastest during rush hour; rideshare is easiest late night.",
+        "grounding_source_type": "CITY_GUIDES",
+        "grounding_confidence": 0.75
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "Any must-see spots for a 1-day trip?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Top picks: a central landmark walk, one major museum or market, and a viewpoint/sunset spot. If you tell me what you like (food, history, shopping), I’ll tailor a quick 1-day plan.",
+        "grounding_source_type": "CITY_GUIDES",
+        "grounding_confidence": 0.84
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Food + culutre. not big on shopping.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Great—do a morning cultural site or museum, lunch in a local food district, then an early evening neighborhood stroll with a casual dinner. If you share your day of week, I’ll note any closures (some museums close Mondays).",
+        "grounding_source_type": "CITY_GUIDES",
+        "grounding_confidence": 0.81
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Great, noted.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.76
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "city_guide",
+      "attractions",
+      "safety",
+      "transport"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000023",
+    "channel": "web_chat",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_024",
+      "city": "Madrid",
+      "country": "Spain",
+      "region": "Europe"
+    },
+    "language": "en",
+    "created_at": "2024-02-15T20:21:52+01:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 4
+    },
+    "intent_primary": "Cancellation / refunds / fees",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 812,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello. I need to cancel and want to know if I’ll be charged.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "I can help with that. Cancellation terms depend on the rate type and how close you are to arrival. If you tell me the property city and the date range, I’ll explain the likely fee window.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.92
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "It's Madird. Arrival is in 2 days.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Given you’re within 48–72 hours of arrival, many rates become non‑refundable or charge the first night. If you share whether it’s a flexible or advance purchase rate, I can be more precise.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.86
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Not sure. it's labeled 'Savre'.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Saver rates are often more restrictive and may be non‑refundable close to arrival. If you’d like, a hotel team member can confirm the exact terms tied to your reservation.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.75
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Ok, I'll keep it then.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Thanks!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.86
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "cancellation",
+      "refund",
+      "policy"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000024",
+    "channel": "whatsapp",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_025",
+      "city": "Bangkok",
+      "country": "Thailand",
+      "region": "Asia-Pacific"
+    },
+    "language": "en",
+    "created_at": "2024-01-26T05:48:26+07:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "gold",
+      "party_size": 2
+    },
+    "intent_primary": "Check-in / check-out times & early/late requests",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1808,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hey there! What time is check-in at Bangkok? Also, can I do early check-in?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Standard check-in is 3:00 PM and check-out is 12:00 PM. Early check-in is based on availability; we can note your preference and confirm closer to arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.86
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I arrive aorund 11am. any fee?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "If an early check-in fee applies, it depends on occupancy and how early the room is ready. If you share your rarival day, I can add a request for 11:00 AM to the property.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.85
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Arriving next week. pls add request. RES_ID_018",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Done—I've added an early check-in request for around 11:00 AM to your reservation. We’ll do our best and confirm at the desk on arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.84
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Thank you.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "Happy to help—Stay Your Way.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.73
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "checkin_checkout",
+      "timing",
+      "front_desk"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000025",
+    "channel": "web_chat",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_026",
+      "city": "Accra",
+      "country": "Ghana",
+      "region": "Africa"
+    },
+    "language": "en",
+    "created_at": "2024-05-13T05:26:45+00:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "gold",
+      "party_size": 4
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 950,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hi—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.75
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.89
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Thank you.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.84
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "amenities",
+      "services"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000026",
+    "channel": "mobile_app",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_027",
+      "city": "Doha",
+      "country": "Qatar",
+      "region": "Middle East"
+    },
+    "language": "en",
+    "created_at": "2024-03-18T10:13:02+03:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 4
+    },
+    "intent_primary": "Property-specific notes (renovations, seasonal changes, closures)",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "negative",
+    "resolution": {
+      "status": "abandoned",
+      "resolution_time_seconds": 854,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello. Is anything under renovation right now? I saw a note online and I'm worried.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Thanks for checking. Some properties have phased updates that can affect lobby areas or certain floors, but we aim to minimize noise during quiet hours.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.88
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "Will the gym be open in the morning?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "If there’s a temporary lcosure, we typically offer an alternative (e.g., partner gym access or adjusted hours). Let me confirm the current status for this property.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.39
+      },
+      {
+        "turn": 5,
+        "sender": "assistant",
+        "text": "As a general guide, fitness centers remain open unless a short maintenance window is posted. If yuo share your stay dates, I can check if any seasonal changes apply.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.91
+      },
+      {
+        "turn": 6,
+        "sender": "guest",
+        "text": "Ok thanks, dates are in May.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 7,
+        "sender": "assistant",
+        "text": "Noted—May typically runs on standard hours. If anything changes, we’ll post it in the pre-arrival message in-app.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.85
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Appreciate it.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "Happy to help—Stay Your Way.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.88
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "ops_notes",
+      "renovation",
+      "closure"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000027",
+    "channel": "mobile_app",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_028",
+      "city": "Rome",
+      "country": "Italy",
+      "region": "Europe"
+    },
+    "language": "en",
+    "created_at": "2024-02-13T13:03:24+01:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "none",
+      "party_size": 4
+    },
+    "intent_primary": "Loyalty program points / tiers / benefits",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "escalated",
+      "resolution_time_seconds": 2351,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hi! I'm Platinum—do I get late checkout at Rome?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Late check-out benefits depend on your GSH loyalty tier and availability on departure day. Gold and Platinum typically receive priority for late check-out requests, while Silver receives standard preference. We’ll confirm at the desk or via chat on the morning of departure.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.95
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "How do points post? I stayed last weekend but don't see them.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Points usually post within 3–7 days after checkout, once the stay is marked as completed. If it’s been longer than 7 days, we can open a missing-stay review (no personal details needed here—just your RES_ID placeholder).",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.87
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "It's been 9 days. RES_ID_013",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Thanks. A missing-stay review requires account-level lookup, so I’ll escalate this to a loyalty specialist to investigate and update you here.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.63
+      },
+      {
+        "turn": 7,
+        "sender": "assistant",
+        "text": "I’m going to loop in a hotel team mebmer to review this and follow up here.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.89
+      },
+      {
+        "turn": 8,
+        "sender": "agent",
+        "text": "Loyalty desk here—request received. Please confirm the property city and checkout date so we can match the stay. We can proceed with placeholders in chat and follow secure channels if needed.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.8
+      },
+      {
+        "turn": 9,
+        "sender": "guest",
+        "text": "Rome, checkout was 2024-01-15",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 10,
+        "sender": "agent",
+        "text": "Perfect. I’ve opened a missing-stay case. Typical resolution is 3–5 business days; we’ll post points and eligible nights once verified.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.82
+      }
+    ],
+    "escalation": {
+      "escalated": true,
+      "reason": "Account-level loyalty points / missing stay investigation",
+      "escalation_packet": {
+        "summary": "Escalate to property/specialist for loyalty program points / tiers / benefits inquiry at Rome (PROP_028).",
+        "guest_ask": "Hi! I'm Platinum—do I get late checkout at Rome?",
+        "constraints": [
+          "No PII in chat",
+          "Use secure channel for invoices/account lookup",
+          "Stay Your Way tone"
+        ],
+        "recommended_next_action": "Review reservation/account internally, confirm policy outcome, and respond in this thread with next steps.",
+        "missing_info": [
+          "Checkout date",
+          "Loyalty account match"
+        ]
+      }
+    },
+    "tags": [
+      "loyalty",
+      "points",
+      "tier_benefits",
+      "escalated"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000028",
+    "channel": "whatsapp",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_029",
+      "city": "Los Angeles",
+      "country": "United States",
+      "region": "North America"
+    },
+    "language": "en",
+    "created_at": "2024-03-07T04:41:25-08:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "none",
+      "party_size": 4
+    },
+    "intent_primary": "Cancellation / refunds / fees",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1321,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hi. In eed to cancel and want to know if I’ll be charged.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "I can help with that. Cancellation terms depend on the rate type and how close you are to arrival. If you tell me the property city and the date range, I’ll explain the likely fee window.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.9
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "It's Lo sAngeles. Arrival is in 2 days.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Given you’re within 48–72 hours of arrival, many rates become non‑refundable or charge the first night. If you share whether it’s a flexible or advance purchase rate, I can be more precise.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.88
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Not sure. it's labeled 'Saver'.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Saver rates are often more restrictive and may be non‑refundable close to arrival. If you’d like, a hotel team member can confirm the exact terms tied to your reservation.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.46
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Ok, I'll keep it then.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Thank you.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "Anything else I can help with today?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.88
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "cancellation",
+      "refund",
+      "policy"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000029",
+    "channel": "whatsapp",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_030",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Middle East"
+    },
+    "language": "es",
+    "created_at": "2024-05-29T00:06:28+04:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "none",
+      "party_size": 2
+    },
+    "intent_primary": "Parking / transportation / airport shuttle",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1749,
+      "csat_score": 5
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hola! Do you have airport shuttle at Dubai?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Some GSH properties offer a scheduled shuttle, while others partner with vetted car services. If you share your arrival airport and approximate landing time, I can advise the best option for this property.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.81
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "Landing 18:20. Also parking onsite?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "On-site parking availability varies by property; when offered, it’s typically paid per night and may be valet or self-park. For your 18:20 arrival, a pre-booked transfer is usually the smoothest—especially during peak hours.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.92
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Gracias.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "¿Algo más en lo que pueda ayudar?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.73
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "parking",
+      "transport",
+      "shuttle"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000030",
+    "channel": "mobile_app",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_031",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "region": "Africa"
+    },
+    "language": "en",
+    "created_at": "2024-01-05T01:11:54+03:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 4
+    },
+    "intent_primary": "Property-specific notes (renovations, seasonal changes, closures)",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 749,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello. Is anything under renovation right now? I saw a note online and I'm worried.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Thanks for checking. Some properties have phased updates that can affect lobby areas or certain floors, but we aim to minimize noise during quiet hours.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.86
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "Will the gym be open in the morning?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "If there’s a temporary closure, we typically offer an alternative (e.g., partner gym access or adjusted hours). Let me confirm the current status for this property.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.47
+      },
+      {
+        "turn": 5,
+        "sender": "assistant",
+        "text": "As a general guide, fitness centers remain open unless a short maintenance window is posted. If you share your stay dates, I can check if any seasonal changes apply.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.8
+      },
+      {
+        "turn": 6,
+        "sender": "guest",
+        "text": "Ok thanks, dates are in May.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 7,
+        "sender": "assistant",
+        "text": "Noted—May typically runs on standard hours. If anything changes, we’ll post it in the pre-arrival message in-app.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.75
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Thanks!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.89
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "ops_notes",
+      "renovation",
+      "closure"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000031",
+    "channel": "web_chat",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_032",
+      "city": "Madrid",
+      "country": "Spain",
+      "region": "Europe"
+    },
+    "language": "es",
+    "created_at": "2024-01-15T15:10:18+01:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "gold",
+      "party_size": 6
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1435,
+      "csat_score": 5
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hola—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.96
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.8
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Se agradece.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "¿Algo más en lo que pueda ayudar?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.86
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "amenities",
+      "services"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000032",
+    "channel": "web_chat",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_033",
+      "city": "Toronto",
+      "country": "Canada",
+      "region": "North America"
+    },
+    "language": "es",
+    "created_at": "2024-04-29T10:08:48-05:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 1
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "escalated",
+      "resolution_time_seconds": 2720,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hola 👋—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.8
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.73
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Se agradece.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "¿Algo más en lo que pueda ayudar?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.89
+      }
+    ],
+    "escalation": {
+      "escalated": true,
+      "reason": "Requires property or specialist review",
+      "escalation_packet": {
+        "summary": "Escalate to property/specialist for amenities & services (wifi, breakfast, gym, pool, spa) inquiry at Toronto (PROP_033).",
+        "guest_ask": "Hola 👋—is breakfast included? Also wifi speed?",
+        "constraints": [
+          "No PII in chat",
+          "Use secure channel for invoices/account lookup",
+          "Stay Your Way tone"
+        ],
+        "recommended_next_action": "Review reservation/account internally, confirm policy outcome, and respond in this thread with next steps.",
+        "missing_info": [
+          "Stay dates",
+          "Affected facility"
+        ]
+      }
+    },
+    "tags": [
+      "amenities",
+      "services",
+      "escalated"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000033",
+    "channel": "whatsapp",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_034",
+      "city": "Paris",
+      "country": "France",
+      "region": "Europe"
+    },
+    "language": "en",
+    "created_at": "2024-01-31T19:48:39+01:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "silver",
+      "party_size": 5
+    },
+    "intent_primary": "Loyalty program points / tiers / benefits",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1043,
+      "csat_score": 3
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello! I'm Gold—do I get late checkout at Paris?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Late check-out benefits depend on your GSH loyalty tier and availability on departure day. Gold and Platinum typically receive priority for late check-out requests, while Silver receives standard preference. We’ll confirm at the desk or via chat on the morning of departure.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.74
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "How do points post? I stayed last weekend butd on't see them.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Points usually post within 3–7 days after checkout, once the stay is marked as completed. If it’s been longer than 7 days, we can open a missing-stay review (no personal details needed here—just your RES_ID placeholder).",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.78
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "It's been 9 days. RES_ID_094",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Since it’s been 9 days, the next step is a missing-stay review. If you want, I can connect you with the loyalty team to process it.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.41
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "No worries, I'll wait ab it more.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Thank you.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "Anything else I can help with today?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.89
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "loyalty",
+      "points",
+      "tier_benefits"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000034",
+    "channel": "whatsapp",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_035",
+      "city": "Rome",
+      "country": "Italy",
+      "region": "Europe"
+    },
+    "language": "fr",
+    "created_at": "2024-05-16T11:25:45+01:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "gold",
+      "party_size": 6
+    },
+    "intent_primary": "Parking / transportation / airport shuttle",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "escalated",
+      "resolution_time_seconds": 4073,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Bonsoir! Do you have iarport shuttle at Rome?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Some GSH properties offer a scheduled shuttle, while others partner with vetted car services. If you share your arrival airport and approximate landing time, I can advise the best option for this property.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.77
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "Landing 18:20. Also parking onsite?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "On-site parking availability varies by property; when offered, it’s typically paid per night and may be valet or self-park. For your 18:20 arrival, a pre-booked transfer is usually the smoothest—especially during peak hours.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.77
+      },
+      {
+        "turn": 5,
+        "sender": "assistant",
+        "text": "To confirm shuttle schedules and current parking rates for this specific property, I’ll escalate to the property team for the latest operational details.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.38
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Je fais intervenir un membre de l’équipe de l’hôtel pour examiner cela et vous répondre ici.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.74
+      },
+      {
+        "turn": 7,
+        "sender": "agent",
+        "text": "Property team here. We do not run a shuttle at this location; we can arrange a fixed-price sedan transfer if you’d like. On-site valet parking is available nightly, subject to space.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.92
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Ok book sedan. (estimate?)",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "agent",
+        "text": "We can place the request, but final pricing depends on vehicle type and airport. Please ocnfirm the airport name; we’ll reply with the fixed quote and confirmation steps.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.93
+      }
+    ],
+    "escalation": {
+      "escalated": true,
+      "reason": "Property-specific shuttle schedule / parking rate confirmation",
+      "escalation_packet": {
+        "summary": "Escalate to property/specialist for parking / transportation / airport shuttle inquiry at Rome (PROP_035).",
+        "guest_ask": "Bonsoir! Do you have iarport shuttle at Rome?",
+        "constraints": [
+          "No PII in chat",
+          "Use secure channel for invoices/account lookup",
+          "Stay Your Way tone"
+        ],
+        "recommended_next_action": "Review reservation/account internally, confirm policy outcome, and respond in this thread with next steps.",
+        "missing_info": [
+          "Airport name",
+          "Vehicle preference"
+        ]
+      }
+    },
+    "tags": [
+      "parking",
+      "transport",
+      "shuttle",
+      "escalated"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000035",
+    "channel": "mobile_app",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_036",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "region": "Africa"
+    },
+    "language": "fr",
+    "created_at": "2024-05-29T17:34:34+02:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "none",
+      "party_size": 6
+    },
+    "intent_primary": "Local city guide / attractions / safety / transport tips",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1232,
+      "csat_score": 5
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Bonsoir! First time in Cape Town. Any areas to avoid at night? also best way from downtown?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Happy to help. For most major areas, stick to well-lit main streets at night and use licensed rides or the metro/taxi stands. From downtown, public transit is usually fastest during rush hour; rideshare is easiest late night.",
+        "grounding_source_type": "CITY_GUIDES",
+        "grounding_confidence": 0.83
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "Any must-see spots for a 1-day trip?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Top picks: a central landmark walk, one major museum or market, and a viewpoint/sunset spot. If you tell me what you like (food, history, shopping), I’ll tailor a quick 1-day plan.",
+        "grounding_source_type": "CITY_GUIDES",
+        "grounding_confidence": 0.83
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Food + culture. not big on shopping.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Great—do a morning cultural site or museum, lunch in a local food district, then an early evening neighborhood stroll with a casual dinner. If you share your day of week, I’ll note any closures (some museums close Mondays).",
+        "grounding_source_type": "CITY_GUIDES",
+        "grounding_confidence": 0.91
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Merci !",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "C’est noté. Bon séjour !",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.95
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "city_guide",
+      "attractions",
+      "safety",
+      "transport"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000036",
+    "channel": "whatsapp",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_037",
+      "city": "Muscat",
+      "country": "Oman",
+      "region": "Middle East"
+    },
+    "language": "en",
+    "created_at": "2024-01-27T20:59:02+04:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "gold",
+      "party_size": 5
+    },
+    "intent_primary": "Billing / invoice request",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1660,
+      "csat_score": 3
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello—I need an invoice for my stay. Can you email it?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "I can help you get a copy. For privacy, we don’t collect emails in chat. You can request the invoice at the front desk, or we can have the hotel resend it through the secure channel tied to your reservation.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.79
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I already checked out. Can you send it here?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "For security, we can’t share full invoices directly in chat. The fastest option is to request it via the reservation channel or call the property—if you prefer, I can connect you to the billing team.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.94
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Ok connect me.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Sure—if you message “Billing” with your RES_ID placeholder, the property team can pick it up and resend securely.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.95
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Thanks!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.73
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "billing",
+      "invoice",
+      "receipt"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000037",
+    "channel": "mobile_app",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_038",
+      "city": "Los Angeles",
+      "country": "United States",
+      "region": "North America"
+    },
+    "language": "en",
+    "created_at": "2024-06-11T22:50:41-08:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "none",
+      "party_size": 1
+    },
+    "intent_primary": "Loyalty program points / tiers / benefits",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 677,
+      "csat_score": 3
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hey there! I'm not a member—do I get late checkout at Los Angeles?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Late check-out benefits depend on your GSH loyalty tier and availability on departure day. Gold and Platinum typically receive priority for late check-out requests, while Silver receives standard preference. We’ll confirm at the desk or via chat on the morning of departure.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.89
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "How do points post? I stayed last weekend but don't see them.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Points usually post wihtin 3–7 days after checkout, once the stay is marked as completed. If it’s been longer than 7 days, we can open a missing-stay review (no personal details needed here—just your RES_ID placeholder).",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.72
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "It's been 9 days. RES_ID_037",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Since it’s been 9 days, the next step is a missing-stay review. If you want, I can connect you with the loyalty team to process it.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.64
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "No worries, I'll wait a bit more.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Appreciate it.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "Anything else I can help with today?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.73
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "loyalty",
+      "points",
+      "tier_benefits"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000038",
+    "channel": "mobile_app",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_039",
+      "city": "Hong Kong",
+      "country": "China",
+      "region": "Asia-Pacific"
+    },
+    "language": "es",
+    "created_at": "2024-02-16T23:30:48+08:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "silver",
+      "party_size": 5
+    },
+    "intent_primary": "Loyalty program points / tiers / benefits",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 662,
+      "csat_score": 5
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hola 👋! I'm Platinum—do I get late checkout at Hong Kong?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Late check-out benefits depend on your GSH loyalty tier and availability on departure day. Gold and Platinum typically receive priority for late check-out requests, while Silver receives standard preference. We’ll confirm at the desk or via chat on the morning of departure.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.88
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "How do points post? I stayed last weekend but don't see them.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Points usually post within 3–7 days after checkout, once the stay is marked as completed. If it’s been longer than 7 days, we can open a missing-stay review (no personal details needed here—just your RES_ID placeholder).",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.95
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "It's been 9 days. RES_ID_079",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Since it’s been 9 days, the next step is a missing-stay review. If you want, I can connect you with the loyalty team to process it.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.57
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "No worries, I'll wait a bit more.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "¡Gracias!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "¿Algo más en lo que pueda ayudar?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.78
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "loyalty",
+      "points",
+      "tier_benefits"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000039",
+    "channel": "whatsapp",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_040",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Asia-Pacific"
+    },
+    "language": "en",
+    "created_at": "2024-04-16T00:36:30+10:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 3
+    },
+    "intent_primary": "Check-in / check-out times & early/late requests",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "escalated",
+      "resolution_time_seconds": 4565,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello! What time is check-in at Sydney? Also, can I do early check-in?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Standard check-in is 3:00 PM and check-out is 12:00 PM. Early check-in is based on availability; we can note your preference and confirm closer to arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.75
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I arrive around 11am. any fee?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "If an early check-in fee applies, it depends on occupancy and how early the room is ready. If you share your arrival day, I can add a request for 11:00 AM to the property.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.73
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Arriving next ewek. pls add request. RES_ID_035",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Done—I've added an early check-in request for around 11:00 AM to your reservation. We’ll do our best and confirm at the desk on arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.8
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Appreciate it.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "Happy to help—Stay Your Way.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.83
+      }
+    ],
+    "escalation": {
+      "escalated": true,
+      "reason": "Requires property or specialist review",
+      "escalation_packet": {
+        "summary": "Escalate to property/specialist for check-in / check-out times & early/late requests inquiry at Sydney (PROP_040).",
+        "guest_ask": "Hello! What time is check-in at Sydney? Also, can I do early check-in?",
+        "constraints": [
+          "No PII in chat",
+          "Use secure channel for invoices/account lookup",
+          "Stay Your Way tone"
+        ],
+        "recommended_next_action": "Review reservation/account internally, confirm policy outcome, and respond in this thread with next steps.",
+        "missing_info": [
+          "Exact stay dates",
+          "Rate type / package",
+          "Arrival/departure time details"
+        ]
+      }
+    },
+    "tags": [
+      "checkin_checkout",
+      "timing",
+      "front_desk",
+      "escalated"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000040",
+    "channel": "mobile_app",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_041",
+      "city": "Rome",
+      "country": "Italy",
+      "region": "Europe"
+    },
+    "language": "en",
+    "created_at": "2024-03-25T20:20:27+01:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 3
+    },
+    "intent_primary": "Billing / invoice request",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1365,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello—I need an invoice for my stay. Can you email it?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "I can help you get a copy. For privacy, we don’t collect emails in chat. You can request the invoice at the front desk, or we can have the hotel resend it through the secure channel tied to your reservation.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.84
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I already checked out. Can you send it here?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "For security, we can’t share full invoices directly in chat. The fastest option is to request it via the reservation channel or call the property—if you prefer, I can connect you to the billing team.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.74
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Ok connect me.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Sure—if you message “Billing” with your RES_ID placeholder, the property team can pick it up and resend securely.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.85
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Apprecaite it.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "Anything else I can help with today?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.86
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "billing",
+      "invoice",
+      "receipt"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000041",
+    "channel": "whatsapp",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_042",
+      "city": "Toronto",
+      "country": "Canada",
+      "region": "North America"
+    },
+    "language": "en",
+    "created_at": "2024-01-15T13:43:01-05:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 1
+    },
+    "intent_primary": "Room upgrades & special requests",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1027,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hey there. Any chance of an upgrade? Also need a quiet room pls.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "We can absolutely note both requests. Upgrades are based on availability and, if applicable, loyalty tier priority. For a quieter room, we’ll aim to place you away from elevators and street-facing rooms.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.91
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "Can I egt extra pillows and a baby crib?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Yes—extra pillows and a crib can be requested in advance. Please note: crib availability is limited, so we’ll confirm once assigned by housekeeping.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.87
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Appreciate it.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Anything eles I can help with today?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.88
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "upgrade",
+      "special_request",
+      "room"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000042",
+    "channel": "web_chat",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_043",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "region": "Africa"
+    },
+    "language": "en",
+    "created_at": "2024-02-24T02:47:18+03:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 6
+    },
+    "intent_primary": "Check-in / check-out times & early/late requests",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1164,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hi! What time is check-in at Nairobi? Also, can I do early check-in?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Standard check-in is 3:00 PM and check-out is 12:00 PM. Early check-in is based on availability; we can note your preference and confirm closer to arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.78
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I arrive around 11am. any fee?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "If an early check-in fee applies, it depends on occupancy and how early the room is ready. If you share your arrival day, I can add a request for 11:00 AM to the property.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.96
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Arriving next week. pls add request. RES_ID_046",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Done—I've added an early check-in request for around 11:00 AM to your reservation. We’ll do our best and confirm at the desk on arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.77
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Thanks!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "Happy to help—Stay Your Way.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.89
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "checkin_checkout",
+      "timing",
+      "front_desk"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000043",
+    "channel": "mobile_app",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_044",
+      "city": "Casablanca",
+      "country": "Morocco",
+      "region": "Africa"
+    },
+    "language": "en",
+    "created_at": "2024-06-22T01:54:24+01:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "silver",
+      "party_size": 3
+    },
+    "intent_primary": "Loyalty program points / tiers / benefits",
+    "intent_secondary": null,
+    "sentiment_start": "positive",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1099,
+      "csat_score": 3
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello! I'm Platinum—do I get late checkout at Casablanca?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Late check-out benefits depend on your GSH loyalty tier and availability on departure day. Gold and Platinum typically receive priority for late check-out requests, while Silver receives standard preference. We’ll confirm at the desk or via chat on the morning of departure.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.75
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "How do points post? I stayed last weekend but don't see them.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Points usually post within 3–7 days after checkout, once the stay is marked as completed. If it’s been longer than 7 days, we can open a missin-gstay review (no personal details needed here—just your RES_ID placeholder).",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.86
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "It's been 9 days. RES_ID_069",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Since it’s been 9 days, the next step is a missing-stay review. If you want, I can connect you with the loyalty team to process it.",
+        "grounding_source_type": "GSH-LOY-001",
+        "grounding_confidence": 0.59
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "No worries,I 'll wait a bit more.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Thanks!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.82
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "loyalty",
+      "points",
+      "tier_benefits"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000044",
+    "channel": "web_chat",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_045",
+      "city": "Accra",
+      "country": "Ghana",
+      "region": "Africa"
+    },
+    "language": "en",
+    "created_at": "2024-01-25T22:04:57+00:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "silver",
+      "party_size": 3
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1072,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hey there—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on yoru rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.84
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.94
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Appreciate it.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.79
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "amenities",
+      "services"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000045",
+    "channel": "whatsapp",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_046",
+      "city": "Vancouver",
+      "country": "Canada",
+      "region": "North America"
+    },
+    "language": "es",
+    "created_at": "2024-04-24T22:01:38-08:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "silver",
+      "party_size": 2
+    },
+    "intent_primary": "Local city guide / attractions / safety / transport tips",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1798,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hola 👋! First time in Vancouver. Any areas to avoid at night? also best way from downtown?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Happy to help. For most major areas, stick to well-lit main streets at night and use licensed rides or the metro/taxi stands. From downtown, public transit is usually fastest during rush hour; rideshare is easiest late night.",
+        "grounding_source_type": "CITY_GUIDES",
+        "grounding_confidence": 0.73
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "Any must-see spotsf or a 1-day trip?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Top picks: a central landmark walk, one major museum or market, and a viewpoint/sunset spot. If you tell me what you like (food, history, shopping), I’ll tailor a quick 1-day plan.",
+        "grounding_source_type": "CITY_GUIDES",
+        "grounding_confidence": 0.9
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Food + culture. not big on shopping.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Great—do a morning cultural site or museum, lunch in a local food district, then an early evening neighborhood stroll with a casual dinner. If you share your day of week, I’ll note any closures (some museums close Mondays).",
+        "grounding_source_type": "CITY_GUIDES",
+        "grounding_confidence": 0.84
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "¡Gracias!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "Con gusto—“Stay Your Way”.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.84
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "city_guide",
+      "attractions",
+      "safety",
+      "transport"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000046",
+    "channel": "whatsapp",
+    "brand": "GrandStay Business",
+    "property": {
+      "property_id": "PROP_047",
+      "city": "Los Angeles",
+      "country": "United States",
+      "region": "North America"
+    },
+    "language": "en",
+    "created_at": "2024-03-31T04:27:26-08:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "none",
+      "party_size": 4
+    },
+    "intent_primary": "Check-in / check-out times & early/late requests",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1197,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hi! What time is check-in at Los Angeles? Also, can I do early check-in?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Standard check-in is 3:00 PM and check-out is 12:00 PM. Early check-in is based on availability; we can note your preference and confirm closer to arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.8
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "I arrive around 11am. any fee?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "If an early check-in fee applies, it depends on occupancy and how early the room is ready. If you share your arrival day, I can add a request for 11:00 AM to the property.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.84
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Arriving next week. pls add request. RES_ID_023",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Done—I've added an early check-in request for around 11:00 AM to your reservation. We’ll do our best and confirm at the desk on arrival.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.78
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Thank you.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.81
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "checkin_checkout",
+      "timing",
+      "front_desk"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000047",
+    "channel": "mobile_app",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_048",
+      "city": "Hong Kong",
+      "country": "China",
+      "region": "Asia-Pacific"
+    },
+    "language": "en",
+    "created_at": "2024-04-06T18:05:08+08:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "none",
+      "party_size": 2
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "escalated",
+      "resolution_time_seconds": 5630,
+      "csat_score": null
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hey there—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.95
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.73
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Thank you.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Anything else I can help with today?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.83
+      }
+    ],
+    "escalation": {
+      "escalated": true,
+      "reason": "Requires property or specialist review",
+      "escalation_packet": {
+        "summary": "Escalate to property/specialist for amenities & services (wifi, breakfast, gym, pool, spa) inquiry at Hong Kong (PROP_048).",
+        "guest_ask": "Hey there—is breakfast included? Also wifi speed?",
+        "constraints": [
+          "No PII in chat",
+          "Use secure channel for invoices/account lookup",
+          "Stay Your Way tone"
+        ],
+        "recommended_next_action": "Review reservation/account internally, confirm policy outcome, and respond in this thread with next steps.",
+        "missing_info": [
+          "Stay dates",
+          "Affected facility"
+        ]
+      }
+    },
+    "tags": [
+      "amenities",
+      "services",
+      "escalated"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000048",
+    "channel": "mobile_app",
+    "brand": "GrandStay Resorts",
+    "property": {
+      "property_id": "PROP_049",
+      "city": "Vancouver",
+      "country": "Canada",
+      "region": "North America"
+    },
+    "language": "en",
+    "created_at": "2024-01-09T18:50:41-08:00",
+    "guest_profile": {
+      "guest_type": "business",
+      "loyalty_tier": "gold",
+      "party_size": 3
+    },
+    "intent_primary": "Amenities & services (wifi, breakfast, gym, pool, spa)",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "positive",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 857,
+      "csat_score": 4
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello—is breakfast included? Also wifi speed?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Breakfast inclusion depends on your rate and package. Complimentary Wi‑Fi is available throughout the hotel; streaming and video calls are supported on the standard network.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.83
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "What time is breakfast served?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Breakfast is typically served 6:30–10:30 AM on weekdays and 7:00–11:00 AM on weekends. If your property has seasonal adjustments, I can confirm for this location.",
+        "grounding_source_type": "GSH-AMN-003",
+        "grounding_confidence": 0.87
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Perfect.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.91
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "amenities",
+      "services"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000049",
+    "channel": "whatsapp",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_050",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "region": "Africa"
+    },
+    "language": "en",
+    "created_at": "2024-05-18T13:34:44+02:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "none",
+      "party_size": 2
+    },
+    "intent_primary": "Cancellation / refunds / fees",
+    "intent_secondary": null,
+    "sentiment_start": "negative",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 924,
+      "csat_score": 3
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hello. I need to cancel and want to know if I’ll be charged.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "I can help with that. Cancellation terms depend on the rate type and how close you are to arrival. If you tell me the property city and the date range, I’ll explain the likely fee window.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.76
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "It's Cape Town. Arrival is in 2 days.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "Given you’re within 48–72 hours of arrival, many rates become non‑refundable or charge the first night. If you share whether it’s a flexible or advance purchase rate, I can be more precise.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.79
+      },
+      {
+        "turn": 5,
+        "sender": "guest",
+        "text": "Not sure. it's labeled 'Saver'.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 6,
+        "sender": "assistant",
+        "text": "Saver rates are often more restrictive and may be non‑refundable close to arrival. If you’d like, a hotel team member can confirm the exact terms tied to your reservation.",
+        "grounding_source_type": "GSH-POL-001",
+        "grounding_confidence": 0.56
+      },
+      {
+        "turn": 7,
+        "sender": "guest",
+        "text": "Ok, I'll keep it then.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Thank you.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "You're all set. Safe travels!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.88
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "cancellation",
+      "refund",
+      "policy"
+    ]
+  },
+  {
+    "conversation_id": "CHAT_000050",
+    "channel": "mobile_app",
+    "brand": "UrbanStay",
+    "property": {
+      "property_id": "PROP_051",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "region": "Africa"
+    },
+    "language": "es",
+    "created_at": "2024-04-03T07:03:13+02:00",
+    "guest_profile": {
+      "guest_type": "leisure",
+      "loyalty_tier": "gold",
+      "party_size": 5
+    },
+    "intent_primary": "Property-specific notes (renovations, seasonal changes, closures)",
+    "intent_secondary": null,
+    "sentiment_start": "neutral",
+    "sentiment_end": "neutral",
+    "resolution": {
+      "status": "resolved",
+      "resolution_time_seconds": 1092,
+      "csat_score": 5
+    },
+    "messages": [
+      {
+        "turn": 1,
+        "sender": "guest",
+        "text": "Hola. Is anything under renovation right now? I saw a note online and I'm worried.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 2,
+        "sender": "assistant",
+        "text": "Thanks for checking. Some propreties have phased updates that can affect lobby areas or certain floors, but we aim to minimize noise during quiet hours.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.77
+      },
+      {
+        "turn": 3,
+        "sender": "guest",
+        "text": "Will the gym be open in the morning?",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 4,
+        "sender": "assistant",
+        "text": "If there’s a temporary closure, we typically offer an alternative (e.g., partner gym access or adjusted hours). Let me confirm the current status for this property.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.52
+      },
+      {
+        "turn": 5,
+        "sender": "assistant",
+        "text": "As a general guide, fitness centers remain open unless a short maintenance window is posted. If you share your stay dates, I can check if any seasonal changes apply.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.84
+      },
+      {
+        "turn": 6,
+        "sender": "guest",
+        "text": "Ok thanks, dates are in May.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 7,
+        "sender": "assistant",
+        "text": "Noted—May typically runs on standard hours. If anything changes, we’ll post it in the pre-arrival message in-app.",
+        "grounding_source_type": "GSH-OPS-Notes",
+        "grounding_confidence": 0.92
+      },
+      {
+        "turn": 8,
+        "sender": "guest",
+        "text": "Se agradece.",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.0
+      },
+      {
+        "turn": 9,
+        "sender": "assistant",
+        "text": "Listo. ¡Buen viaje!",
+        "grounding_source_type": "NONE",
+        "grounding_confidence": 0.85
+      }
+    ],
+    "escalation": {
+      "escalated": false,
+      "reason": null,
+      "escalation_packet": null
+    },
+    "tags": [
+      "ops_notes",
+      "renovation",
+      "closure"
+    ]
+  }
+]
