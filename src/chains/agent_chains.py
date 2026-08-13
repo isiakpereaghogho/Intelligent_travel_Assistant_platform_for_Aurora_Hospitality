@@ -15,10 +15,10 @@ def get_llm():
         config = get_config()
         llm = ChatOpenAI(model=config["OPENAI_MODEL"], temperature=0,
                          openai_api_key=config["OPENAI_API_KEY"])
-        logger.info(f"LLM initialized successfully with model: {config['OPENAI_API_KEY']}")
+        logger.info(f"LLM initialized successfully with model: {config['OPENAI_MODEL']}")
         return llm
     except Exception as e:
-        logger.error(f"failed to initialize LLM: (e)")
+        logger.error(f"failed to initialize LLM: {e}")
         raise CustomException(e, sys) from e
 
 def create_policy_chain():
@@ -26,7 +26,10 @@ def create_policy_chain():
     try:
         logger.info("creating policy chain...")
         llm = get_llm()
-        policy_vectorstore = get_policy_vectorstore
+
+        logger.info("Retrieving policy vector store...")
+        policy_vectorstore = get_policy_vectorstore()
+        logger.info("Policy vector store type: %s", type(policy_vectorstore))
 
         policy_prompt = PromptTemplate(input_variables=["context","question","guest_type","loyalty","city"],
         template="""
@@ -87,15 +90,19 @@ def create_policy_chain():
         return policy_chain
     
     except Exception as e:
-        logger.error(f"error in creating policy chain")
+        logger.error(f"error in creating policy chain: {e}")
         raise CustomException(e, sys) from e
 
 def create_conversation_chain():
-    # creating policy agent chain
+    # creating conversation agent chain
     try:
         logger.info("Creating conversation chain...")
         llm = get_llm()
-        conversation_vectorstore = get_conversation_vectorstore
+
+        logger.info("Retrieving conversation vector store...")
+        conversation_vectorstore = get_conversation_vectorstore()
+        logger.info("Conversation vector store type: %s", type(conversation_vectorstore))
+
         conversation_prompt = PromptTemplate(
         input_variables=["context", "question"],
         template="""
@@ -154,7 +161,7 @@ def create_conversation_chain():
         raise CustomException(e, sys) from e
 
 def create_aggregator_chain():
-    # creating policy agent chain
+    # creating aggregator agent chain
     try:
         logger.info("Creating aggregator chain...")
         llm = get_llm()

@@ -18,7 +18,7 @@ def get_policy_agent():
             logger.info("Initializing policy agent...")
             _policy_chain = create_policy_chain()
             logger.info("Policy agent initialized successfully")
-            return _policy_chain
+        return _policy_chain
     except Exception as e:
         logger.error(f"failed to get policy agent: {e}")
         raise CustomException(e, sys) from e

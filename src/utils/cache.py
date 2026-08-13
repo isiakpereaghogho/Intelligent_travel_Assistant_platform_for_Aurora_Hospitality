@@ -27,6 +27,8 @@ INPUT_COST_PER_1K = float(config.get("INPUT_COST_PER_1K", 0.00015))
 
 OUTPUT_COST_PER_1K = float(config.get("OUTPUT_COST_PER_1K", 0.00060))
 
+initialise_cache_database()
+
 # RUNTIME METRICS
 cache_metrics: Dict[str, int] = {
     "hits": 0,

@@ -17,7 +17,7 @@ def get_conversation_agent():
             logger.info("Initializing conversation agent...")
             _conversation_chain = create_conversation_chain()
             logger.info("Conversation agent initialized successfully")
-            return _conversation_chain
+        return _conversation_chain
     except Exception as e:
         logger.error(f"failed to get conversation agent: {e}")
         raise CustomException(e, sys) from e

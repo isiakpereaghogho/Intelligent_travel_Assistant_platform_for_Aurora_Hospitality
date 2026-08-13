@@ -1,6 +1,8 @@
 import sqlite3
 import sys
+from contextlib import contextmanager
 from pathlib import Path
+from typing import Iterator
 
 from src.exception import CustomException
 from src.logger import setup_logger
@@ -15,24 +17,38 @@ CACHE_DB_PATH = Path(
 )
 
 
-def get_cache_connection() -> sqlite3.Connection:
+@contextmanager
+def get_cache_connection() -> Iterator[sqlite3.Connection]:
     """
-    Create and return a connection to the cache database.
+    Open a connection to the cache database and guarantee it is closed
+    when the caller's `with` block exits, whether it completes
+    successfully or raises an exception.
+
+    Usage:
+        with get_cache_connection() as connection:
+            connection.execute(...)
+            connection.commit()
     """
     try:
         CACHE_DB_PATH.parent.mkdir(parents=True, exist_ok=True)
         connection = sqlite3.connect(str(CACHE_DB_PATH), timeout=30)
         connection.row_factory = sqlite3.Row
-        return connection
 
     except Exception as e:
         logger.error("Failed to connect to cache database.")
         raise CustomException(e, sys) from e
 
+    try:
+        yield connection
+
+    finally:
+        connection.close()
+
 
 def initialise_cache_database() -> None:
     """
-    Create the cache database table if it does not already exist.
+    Create the cache database table and index if they do not
+    already exist. Safe to call multiple times.
     """
     try:
         with get_cache_connection() as connection:
@@ -60,7 +76,11 @@ def initialise_cache_database() -> None:
                 """
             )
             connection.commit()
+
         logger.info("Cache database initialised successfully.")
+
+    except CustomException:
+        raise
 
     except Exception as e:
         logger.error("Failed to initialise cache database.")

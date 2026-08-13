@@ -38,8 +38,9 @@ def normalise_confidence(value, default=0.5):
         return min(max(confidence, 0.0), 1.0)
 
     except Exception as e:
-        logger.error("fails to convert confidence value...")
-   
+        logger.error(f"failed to convert confidence value: {e}")
+        return default
+
 def parse_agent_output(output):
     """
     Convert an agent output into a Python dictionary.
@@ -54,14 +55,15 @@ def parse_agent_output(output):
         if isinstance(output, str):
             parsed_output = json.loads(output)
 
-        if isinstance(parsed_output, dict):
-            return parsed_output
+            if isinstance(parsed_output, dict):
+                return parsed_output
 
         return {}
-    
+
     except Exception as e:
-         logger.error("failed to convert agent output")
-            
+        logger.error(f"failed to convert agent output: {e}")
+        return {}
+
 def normalise_limitations(limitations):
     """
     Convert the Policy Agent's limitations into a clean list.
@@ -99,7 +101,8 @@ def normalise_limitations(limitations):
 
         return cleaned_limitations
     except Exception as e:
-        logger.error("failed to convert limitations into a list")
+        logger.error(f"failed to convert limitations into a list: {e}")
+        return []
 
 
 def calculate_confidence_score(policy_output, conversation_output):
@@ -121,7 +124,7 @@ def calculate_confidence_score(policy_output, conversation_output):
 
         conversation_data = parse_agent_output(conversation_output)
 
-        policy_confidence = normalise_confidence(policy_data.get("confidence"),default=0.5)
+        policy_confidence = normalise_confidence(policy_data.get("confidence"), default=0.5)
 
         conversation_confidence = normalise_confidence(conversation_data.get("confidence"), default=0.5)
 
@@ -143,16 +146,19 @@ def calculate_confidence_score(policy_output, conversation_output):
         final_confidence = round(min(max(base_confidence, 0.0), 1.0), 2)
 
         logger.info(
-        "Confidence calculation",
-        f"Policy confidence: {policy_confidence:.2f}",
-        "Conversation confidence: " f"{conversation_confidence:.2f}",
-        f"Policy limitations: {limitations}",
-        "Limitation penalty applied: " f"{limitation_penalty_applied}"
-        f"Overall confidence: {final_confidence:.2f}"
+            "Confidence calculation - Policy confidence: %.2f, "
+            "Conversation confidence: %.2f, Policy limitations: %s, "
+            "Limitation penalty applied: %s, Overall confidence: %.2f",
+            policy_confidence,
+            conversation_confidence,
+            limitations,
+            limitation_penalty_applied,
+            final_confidence
         )
         return final_confidence
     except Exception as e:
-        logger.error(f"failed to calculate confidence from agent..: {e}")
+        logger.error(f"failed to calculate confidence from agent outputs: {e}")
+        raise CustomException(e, sys) from e
 
 def check_escalation_needed(confidence_score):
     """
@@ -284,12 +290,13 @@ async def run_agents_parallel(
         policy_result, conversation_result = await asyncio.gather(policy_task, conversation_task)
 
         # Preserve the complete structured outputs, including
-        # confidence scores and limitations.
-        result = normalise_tool_result(
-            policy_result, conversation_result
-        )
-        logger.info(f"parellel agents completed for question: {question[:50]}...")
-        return result
+        # confidence scores and limitations. Each tool result is
+        # normalised independently and returned as a pair.
+        policy_output = normalise_tool_result(policy_result)
+        conversation_output = normalise_tool_result(conversation_result)
+
+        logger.info(f"parallel agents completed for question: {question[:50]}...")
+        return policy_output, conversation_output
     except Exception as e:
         logger.error(f"failed to run agents in parallel: {e}")
         raise CustomException(e, sys) from e
@@ -505,9 +512,15 @@ async def agentic_rag_answer(question, guest_type, loyalty, city, session_id, us
             print("Question was identified as context-dependent, " "so the response was not cached.")
 
         return response
+    except CustomException:
+        # Already logged and wrapped further down the call stack;
+        # re-raise as-is so app.py's except CustomException branch
+        # returns a real 400 with the actual error detail.
+        raise
     except Exception as e:
         logger.error(f"error: {e}")
-        
+        raise CustomException(e, sys) from e
+
 async def get_system_stats():
     # Get system statistics including cache and cost metrics
     cache_stats = get_cache_summary()
