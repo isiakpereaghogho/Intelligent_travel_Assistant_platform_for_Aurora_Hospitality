@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -13,7 +17,7 @@ jobs:
 
     #1. Checkout code
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v5
 
     # 2. Load environment variables (from secrets only)
     - name: Load environment variables
@@ -30,15 +34,16 @@ jobs:
 
     # 3. Configure AWS Credentials (ONLY for Github to ECR push)
     - name: Configure AWS credentials
-      uses: aws-actions/configure-aws-credentials@v2
+      uses: aws-actions/configure-aws-credentials@v6
       with:
-            aws-region: ${{ secrets.AWS_REGION }}
+        role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+        aws-region: ${{ secrets.AWS_REGION }}
 
     #4. Login to ECR (Github side)
     - name: Login to Amazon ECR
       run: |
-        aws ecr get-login-password --region $AWS_REGION \
-        | docker login --username AWS --password-stdin $ECR_REGISTRY
+            id: login-ecr
+            uses: aws-actions/amazon-ecr-login@v2
 
     # 5. Build Docker image
     - name: Build Docker image
