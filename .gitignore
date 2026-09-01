@@ -182,3 +182,4 @@ cython_debug/
 
 aurora_env/
 .env
+aurora_chatbot_key.pem

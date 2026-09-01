@@ -376,6 +376,17 @@ async def agentic_rag_answer(question, guest_type, loyalty, city, session_id, us
 
                 print("Cache hit: previously stored response returned.")
 
+                # Log the metrics that were stored alongside this
+                # response when it was first generated.
+                logger.info(
+                    "Response metrics (cache hit) - Session: %s, Confidence: %s, "
+                    "Evaluation: %s, Latency: %.0f ms",
+                    session_id,
+                    cached_response.get("confidence", "N/A"),
+                    cached_response.get("evaluation", "N/A"),
+                    cached_response["latency_ms"]
+                )
+
                 return cached_response
 
         # Run both specialist agents in parallel
@@ -445,6 +456,42 @@ async def agentic_rag_answer(question, guest_type, loyalty, city, session_id, us
                 f"aggregator_chain: {final_answer}"
             )
 
+        # Run the response-quality evaluator. This is diagnostic only,
+        # so a failure here is logged and skipped rather than allowed
+        # to break the chat response.
+        evaluation = None
+        if evaluate:
+            try:
+                # Neither chain returns its raw retrieved source documents
+                # (return_source_documents=False), so the combined agent
+                # outputs are used as the best available grounding context.
+                evaluation_context = json.dumps(
+                    {
+                        "policy_agent_output": policy_output,
+                        "conversation_agent_output": conversation_output
+                    },
+                    ensure_ascii=False,
+                    default=str
+                )
+
+                evaluation = evaluator.evaluate_response_quality(
+                    response=answer_text,
+                    question=question,
+                    context=evaluation_context,
+                    verbose=False
+                )
+
+                logger.info(
+                    "Evaluation - Faithfulness: %.3f, Relevance: %.3f, Overall: %.3f",
+                    evaluation["faithfulness"],
+                    evaluation["relevance"],
+                    evaluation["overall"]
+                )
+
+            except Exception as eval_error:
+                logger.warning(f"Evaluation step failed (non-blocking): {eval_error}")
+                evaluation = None
+
     
         # Create an escalation packet where necessary
         escalation_packet = None
@@ -472,6 +519,14 @@ async def agentic_rag_answer(question, guest_type, loyalty, city, session_id, us
         latency_metrics["reasoning_aggregator"].append(reasoning_aggregator_latency)
         latency_metrics["total_pipeline"].append(total_pipeline_latency)
 
+        logger.info(
+            "Latency - Parallel agents: %.0fms, Reasoning aggregator: %.0fms, "
+            "Total pipeline: %.0fms",
+            parallel_agents_latency,
+            reasoning_aggregator_latency,
+            total_pipeline_latency
+        )
+
     
         # Create the complete response object
         response = {
@@ -493,6 +548,7 @@ async def agentic_rag_answer(question, guest_type, loyalty, city, session_id, us
             ),
             "policy_output": policy_output,
             "conversation_output": conversation_output,
+            "evaluation": evaluation,
             "cache_hit": False
         }
 

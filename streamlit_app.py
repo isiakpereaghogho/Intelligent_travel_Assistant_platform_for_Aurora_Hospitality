@@ -212,6 +212,35 @@ body, html {{
     padding:0 6px;
 }}
 
+/* Typing / thinking indicator shown while awaiting a response */
+.typing-indicator{{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    padding:14px 18px;
+}}
+
+.typing-dot{{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background-color:rgba(0, 0, 0, 0.55);
+    animation: typingBounce 1.2s infinite ease-in-out;
+}}
+
+.typing-dot:nth-child(2){{
+    animation-delay:0.2s;
+}}
+
+.typing-dot:nth-child(3){{
+    animation-delay:0.4s;
+}}
+
+@keyframes typingBounce{{
+    0%, 60%, 100% {{ transform: translateY(0); opacity:0.4; }}
+    30% {{ transform: translateY(-4px); opacity:1; }}
+}}
+
 </style>
 
 </head>
@@ -226,7 +255,7 @@ body, html {{
 <div class="card">
 
 <div class="chat-header">
-    <div class="chat-title">Aurora Hotel Assistant</div>
+    <div class="chat-title">Aurora Hotel Customer Support</div>
     <div class="chat-datetime" id="liveDateTime">Loading date &amp; time...</div>
 </div>
 
@@ -305,6 +334,29 @@ function markAsLastMessage($messageStack) {{
     lastTimeElement = $time[0];
 }}
 
+// Builds and appends the "AuroraBot is thinking..." indicator,
+// shown while the API request is in flight.
+function showTypingIndicator() {{
+    let typingHtml = `
+    <div class="d-flex justify-content-start mb-3" id="typingIndicator">
+        <div class="message-stack">
+            <div class="msg_sender_name">AuroraBot</div>
+            <div class="msg_container typing-indicator">
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+            </div>
+        </div>
+    </div>`;
+
+    $("#messageBody").append(typingHtml);
+    $("#messageBody").scrollTop($("#messageBody")[0].scrollHeight);
+}}
+
+function removeTypingIndicator() {{
+    $("#typingIndicator").remove();
+}}
+
 //Scroll down the page and mark the greeting as the last message
 $(document).ready(function() {{
     $("#messageBody").scrollTop(
@@ -339,6 +391,9 @@ $("#chatForm").on("submit", function(e){{
         $("#messageBody")[0].scrollHeight
     );
 
+    // Show the "thinking" indicator while the request is in flight
+    showTypingIndicator();
+
     // Python f-string interpolation for API_URL and session state variables
     fetch("{API_URL}", {{
         method:"POST",
@@ -357,6 +412,8 @@ $("#chatForm").on("submit", function(e){{
     .then(res => res.json())
 
     .then(data => {{
+
+        removeTypingIndicator();
 
         let botHtml = `
         <div class="d-flex justify-content-start mb-3">
@@ -378,6 +435,8 @@ $("#chatForm").on("submit", function(e){{
     }})
 
     .catch(err => {{
+        removeTypingIndicator();
+
         let errorHtml = `
         <div class="d-flex justify-content-start mb-3">
             <div class="message-stack">

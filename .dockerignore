@@ -1,0 +1,6 @@
+.env 
+__pycache__ 
+logs/ 
+*.log
+aurora_chatbot.ipynb
+aurora_chatbot_key.pem
