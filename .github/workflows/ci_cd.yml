@@ -39,10 +39,10 @@ jobs:
         role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
         aws-region: ${{ secrets.AWS_REGION }}
 
-    #4. Login to ECR (Github side)
+    # 4. Login to ECR (Github side)
     - name: Login to Amazon ECR
-      uses: aws-actions/amazon-ecr-login@v2
       id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v2
 
     # 5. Build Docker image
     - name: Build Docker image
