@@ -41,9 +41,8 @@ jobs:
 
     #4. Login to ECR (Github side)
     - name: Login to Amazon ECR
-      run: |
-        aws ecr get-login-password --region $AWS_REGION \
-        | docker login --username AWS --password-stdin $ECR_REGISTRY
+      uses: aws-actions/amazon-ecr-login@v2
+      id: login-ecr
 
     # 5. Build Docker image
     - name: Build Docker image
