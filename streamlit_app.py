@@ -8,7 +8,7 @@ import requests
 #API URL
 
 import os
-API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000")
+API_BASE_URL = os.getenv("API_BASE_URL", "http://54.90.251.56:8000/")
 API_URL = f"{API_BASE_URL}/chat"
 
 def check_api_health():
