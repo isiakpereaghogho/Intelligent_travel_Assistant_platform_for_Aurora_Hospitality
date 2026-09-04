@@ -20,10 +20,15 @@ jobs:
 
       # 2. Configure AWS Credentials (OIDC — only for ECR push)
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v6
+        uses: aws-actions/configure-aws-credentials@v6.2.4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
+          unset-current-credentials: true         
+
+      - name: Verify AWS identity
+        run: |
+          aws sts get-caller-identity
 
       # 3. Login to ECR
       - name: Login to Amazon ECR
@@ -35,17 +40,18 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       # 4. Build & push with caching, tagged by commit SHA + latest
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          file: ./DockerFile.backend
-          push: true
-          tags: |
-            ${{ secrets.ECR_REGISTRY }}/${{ secrets.ECR_REPOSITORY }}:${{ github.sha }}
-            ${{ secrets.ECR_REGISTRY }}/${{ secrets.ECR_REPOSITORY }}:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+      - name: Build and push backend image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: aurora_chatbot
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker buildx build \
+          -f DockerFile.backend \
+          -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG \
+          -t $ECR_REGISTRY/$ECR_REPOSITORY:latest \
+          --push \
+          .
 
       # 5. Deploy to EC2 via SSH (no AWS keys here — IAM instance role handles ECR auth)
       - name: Deploy to EC2 via SSH
